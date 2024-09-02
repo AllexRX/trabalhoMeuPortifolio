@@ -1,0 +1,164 @@
+/* Estilização geral */
+body, html {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #0D0D0D;  /* Fundo preto muito escuro */
+   color: #FFFFFF;  /* Cor do texto principal */
+}
+
+/* Estilização do cabeçalho e menu de navegação */
+header {
+   background: linear-gradient(135deg, #111113, #6b1728);  /* Gradiente de fundo do cabeçalho/nav */
+   padding: 15px;
+   text-align: center;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
+nav ul li {
+   margin: 0 15px;
+}
+
+nav ul li a {
+   color: #FFFFFF;  /* Cor do texto principal */
+   text-decoration: none;
+   font-weight: bold;
+}
+
+nav ul li a:hover {
+   color: #950740;  /* Cor de hover/links */
+   font-size: 1.08em;
+   transition-duration: 0.7s;
+}
+
+/* Estilização das seções principais */
+main {
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   margin: 0;
+   background: linear-gradient(135deg, #1A1A1D, #7e0534, #000000);  /* Gradiente de fundo com cinza, vermelho e preto */
+   border: none;  /* Remover borda se quiser que cubra todo o espaço */
+   box-shadow: none;  /* Remover sombra se necessário */
+   border-radius: 0;  /* Remover cantos arredondados */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+main img {
+   max-width: 100%;  /* Limita a largura da imagem ao tamanho do main */
+    max-height: 80vh;  /* Limita a altura da imagem a 80% da altura da viewport */
+    width: auto;  /* Mantém a proporção da imagem */
+    height: auto;  /* Mantém a proporção da imagem */
+    border-radius: 8px;  /* Bordas arredondadas para as imagens */
+    border: 2px solid #C3073F;  /* Borda vermelha */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);  /* Sombra para destacar as imagens */
+}
+/* Estilização dos títulos no main */
+main h1, main h2, main h3 {
+   color: #d60c48;  /* Títulos em vermelho */
+   text-shadow: #000000 0em 0em 0.5em;
+}
+
+/* Linhas separadoras */
+main hr {
+   border: 0;
+   height: 1px;
+   background: #C3073F;  /* Linha horizontal em vermelho */
+   margin: 20px 0;
+}
+
+.about_me {
+   text-align: center;
+   width: 50vw;
+}
+#photos {
+   text-align: center;
+   text-decoration: underline;
+   color: #7e053360;
+}
+/* Estilização da galeria de fotos */
+.photo-gallery {
+   display: flex;
+   justify-content: space-between;
+}
+
+.photo-gallery img {
+   width: 30%;
+   height: 30%;
+   border-radius: 8px;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+   border: 2px solid #C3073F;  /* Borda vermelha nas imagens da galeria */
+}
+#contact {
+   display: flex;
+   flex-direction: column;
+   #contact > input {
+      margin: 0px 0px 1em
+   }
+}
+#logos {
+   width: 60em;
+   margin: 2em;
+   display: flex;
+   justify-content: space-between;
+}
+#message {
+   width: 300px;
+   height: 300px;
+}
+/* Estilização do carrossel de imagens */
+#carousel {
+   position: relative;
+   text-align: center;
+}
+
+#div_projetos, a {
+   color: #FFFFFF;
+   align-items: center;
+   font-size: 1.2em;
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   margin: 0px 10px;
+   max-width: 600px;
+   height: auto;
+   border-radius: 8px;
+}
+
+/* Estilização do botão de "Voltar ao Topo" */
+#backToTopBtn {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background: linear-gradient(135deg, #000000, #000000);  /* Gradiente de fundo do botão */
+   color: #FFFFFF;  /* Cor do texto principal */
+   border: none;
+   padding: 10px 15px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+#backToTopBtn:hover {
+   background: #6F2232;  /* Cor secundária */
+}
+
+/* Estilização do rodapé */
+footer {
+   background-color: #333;  /* Preto escuro para o rodapé */
+   color: #FFFFFF;  /* Cor do texto principal */
+   text-align: center;
+   padding: 10px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
